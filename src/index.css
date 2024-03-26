@@ -1,3 +1,4 @@
+/* src/App.css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,13 +8,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* src/App.css */
+/* Define custom palette using CSS variables */
+:root {
+  --celadon: #8fd694ff;
+  --emerald: #7dba84ff;
+  --asparagus: #77ad78ff;
+  --reseda-green: #6f8f72ff;
+  --walnut-brown: #504b43ff;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-image: url('https://placedog.net/950/640/s');
+  background-image: url('https://placedog.net/1250/940/s');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -26,7 +35,7 @@ body {
 
 .enter-link {
   padding: 10px 20px;
-  background-color: green;
+  background-color: var(--emerald);
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -35,5 +44,5 @@ body {
 }
 
 .enter-link:hover {
-  background-color: #0056b3;
+  background-color: var(--asparagus);
 }

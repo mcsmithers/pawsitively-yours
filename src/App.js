@@ -1,15 +1,21 @@
-// src/App.js
+// App.js
 import React from 'react';
-import './App.css'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import Layout from './components/Layout/Layout';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Pawsitively Yours</h1>
-        <p>Loving, personalized pet care from a genuine, nuturing perspective</p>
-        <a href="/dashboard" className="enter-link">Enter</a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
