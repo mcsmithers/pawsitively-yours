@@ -1,0 +1,16 @@
+/* src/components/Footer/Footer.css */
+.footer {
+    background-color: var(--reseda-green);
+    /* Use reseda green color for background */
+    color: var(--walnut-brown);
+    /* Use walnut brown color for text */
+    padding: 20px;
+    /* Add padding for better spacing */
+    text-align: center;
+    /* Center-align text */
+}
+
+.footer p {
+    margin: 0;
+    /* Remove default margin for paragraphs */
+}
