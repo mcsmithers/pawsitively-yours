@@ -3,7 +3,7 @@
     background-color: var(--reseda-green);
     color: var(--walnut-brown);
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -17,14 +17,7 @@
     display: flex;
     gap: 20px;
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
-}
-
-.navbar-links li:last-child {
-    margin-left: auto;
-    /* Move the last li to the right */
 }
 
 .navbar-link {
