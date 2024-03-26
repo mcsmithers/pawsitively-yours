@@ -1,0 +1,44 @@
+/* styles/Hero.css */
+.hero {
+    background-image: url('https://placedog.net/800/280');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+        color: var(--walnut-brown);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: var(--emerald);
+    color: var(--walnut-brown);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--asparagus);;
+}
